@@ -1,0 +1,23 @@
+
+
+<!-- {{data}} -->
+
+<button mat-button color="accent">Accent</button>
+
+<div class="main" *ngFor="let hero of data">
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{hero.author}}</mat-card-title>
+      <mat-card-subtitle>{{hero.content}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ hero.urlToImage }}" alt="Photo of a Shiba Inu"> 
+    <mat-card-content>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
