@@ -1,6 +1,6 @@
 
 
-<!-- {{data}} -->
+
 
 <button mat-button color="accent">Accent</button>
 
@@ -9,11 +9,11 @@
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{hero.author}}</mat-card-title>
-      <mat-card-subtitle>{{hero.content}}</mat-card-subtitle>
+      <mat-card-subtitle></mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="{{ hero.urlToImage }}" alt="Photo of a Shiba Inu"> 
     <mat-card-content>
-
+      {{hero.content}}
     </mat-card-content>
     <mat-card-actions>
       <button mat-button>LIKE</button>
