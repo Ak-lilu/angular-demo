@@ -1,5 +1,6 @@
 .example-card {
-    max-width: 400px;
+    max-width: 280px;
+    flex: 1 1 auto;
   }
   
   .example-header-image {
@@ -7,6 +8,6 @@
   }
   .main {
       margin: auto;
-
+      display: flex;
       border: 1px;
   }

@@ -43,6 +43,7 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { NavigationComponent } from './UI/navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -89,6 +90,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatPaginatorModule,
     LayoutModule,
     BrowserAnimationsModule,
+    FlexLayoutModule
 
     
   ],
