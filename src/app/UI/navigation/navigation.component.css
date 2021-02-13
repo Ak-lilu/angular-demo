@@ -15,3 +15,13 @@
   top: 0;
   z-index: 1;
 }
+mat-sidenav{
+  background: linear-gradient(
+    24deg
+    ,#1a1f33,#aa278c) !important;
+}
+mat-toolbar{
+  background: linear-gradient(
+    325deg
+    ,#1a1f33,#aa278c) !important;
+}
