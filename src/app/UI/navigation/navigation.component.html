@@ -1,17 +1,18 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container class="sidenav-container" [ngStyle]="{'color': getRandomColor()}">
   <mat-sidenav #drawer class="sidenav" fixedInViewport
+  [ngStyle]="{'color': getRandomColor()}"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
+    <mat-toolbar [ngStyle]="{'color': getRandomColor()}">Menu</mat-toolbar>
+    <mat-nav-list [ngStyle]="{'color': getRandomColor()}">
       <a mat-list-item routerLink="news">News</a>
       <a mat-list-item routerLink="covid">Users</a>
       <a mat-list-item routerLink="movies">Settings</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar>
+  <mat-sidenav-content [ngStyle]="{'color': getRandomColor()}">
+    <mat-toolbar [ngStyle]="{'color': getRandomColor()}">
       <button
         type="button"
         aria-label="Toggle sidenav"
